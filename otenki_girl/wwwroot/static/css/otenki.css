@@ -1,0 +1,113 @@
+﻿body {
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#main {
+    background: url("../img/otenki-girl/main.png") no-repeat;
+    background-size: cover;
+    background-attachment: initial;
+    margin: 0 auto;
+    width: 800px;
+    height: 667px;
+}
+
+#coin {
+    position: relative;
+    top: 325px;
+    left: 266px;
+    visibility: hidden;
+}
+
+.box {
+    background-color: bisque;
+    border-radius: 10px;
+    position: relative;
+    top: 30%;
+    left: 40%;
+    width: 290px;
+    height: 360px;
+    padding: 0 20px;
+    box-shadow: 0px 0px 5px #555;
+    
+}
+
+.send_reply_text {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.open_submit_contain {
+    text-align: center;
+}
+
+.open_submit {
+    width: 120px;
+    height: 45px;
+    text-align: center;
+    background: red;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.submit {
+    background: red;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 8px 20px;
+    margin: 4px 0 0 0;
+}
+
+.submit:active {
+    background: brown;
+}
+
+
+.replys_main {
+    width: 680px;
+    margin: 20px auto 10px auto;
+    background: bisque;
+    border-radius: 10px;
+    padding: 1px 20px 10px 20px;
+}
+
+.reply {
+    width: 600px;
+    margin: 8px auto 30px auto;
+}
+
+.reply_name {
+    font-weight: bold;
+    color: #333;
+}
+
+.reply_reason {
+    margin: 8px 8px 0 8px;
+}
+
+.reply_date {
+    margin: 8px 0 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.page_change {
+    margin: 8px 0 0 0; 
+} 
+
+.page_text {
+    display: inline-block;
+}
+
+.page_change_btn { 
+    margin: 0 0 0 8px; 
+ } 
+
+.footer {
+    text-align: center;
+    margin: 24px 0 8px 0;
+    font-size: 12px;
+}
