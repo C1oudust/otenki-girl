@@ -13,71 +13,34 @@
     <link rel="shortcut icon"
           href="/static/img/otenki-girl/icon.ico"
           type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="./static/css/otenki.css?version=1.2" />
+    <link rel="stylesheet" type="text/css" href="./static/css/otenki.css?version=1.7" />
     <link rel="stylesheet" type="text/css" href="./static/css/ms.css" />
     <link href="~/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
 <div id="main">
-    <div id="coin">
-        <img src="./static/img/otenki-girl/img-coin.png"
-             width="50px"
-             height="50px" />
-    </div>
-    @* <div class="box"> *@
-    @*     <div style="font-size:20px; color: red; padding: 15px 0 0 0;">¥0</div> *@
-    @*     <div style="margin: 8px 0 0 0;"> *@
-    @*         因下雨而困扰的你，100%的晴天女孩会为你带来阳光😄无论在什么地方... *@
-    @*     </div> *@
-    @*     <div style="display: flex;margin: 8px 0 0 0;"> *@
-    @*         <div> *@
-    @*             <p class="send_reply_text">日期</p> *@
-    @*             <input id="input_date" name="date" type="text" style="width: 90%" /> *@
-    @*         </div> *@
-    @*         <div> *@
-    @*             <p class="send_reply_text">希望天晴的地址</p> *@
-    @*             <input id="input_address" name="address" type="text" /> *@
-    @*         </div> *@
-    @*     </div> *@
-    @* *@
-    @*     <div style="margin: 8px 0 0 0;"> *@
-    @*         <p class="send_reply_text">你的名字</p> *@
-    @*         <input id="input_name" name="name" type="text" style="width: 100%;" /> *@
-    @*     </div> *@
-    @* *@
-    @*     <div style="margin: 8px 0 0 0;"> *@
-    @*         <p class="send_reply_text">希望天晴的理由</p> *@
-    @*         <textarea name="reason" id="input_reason" *@
-    @*                       rows="3" *@
-    @*                       cols="20" *@
-    @*                       style="width: 100%;"></textarea> *@
-    @*     </div> *@
-    @* *@
-    @*     <div style="text-align: center;" > *@
-    @*         <button type="button" class="submit" onClick="addMessage()">提交请求</button> *@
-    @*     </div> *@
-    @* </div> *@
-</div>
-<div class="open_submit_contain">
-    <button type="button" class="open_submit" data-toggle="modal" data-target="#messageModal">我要委托</button>
-</div>
-
-<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
     <div class="box">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 2px -16px 0px 0px;"><span aria-hidden="true">&times;</span></button>
-        <div style="font-size: 20px; color: red; padding: 15px 0 0 0;">¥0</div>
+        <div style="font-size:20px; color: red; padding: 15px 0 0 0;">¥0</div>
         <div style="margin: 8px 0 0 0;">
             因下雨而困扰的你，100%的晴天女孩会为你带来阳光😄无论在什么地方...
         </div>
-        <div style="display: flex; margin: 8px 0 0 0;">
+        <div>
+            <button type="button" class="submit" onClick="addMessage()">
+                <img src="static/img/otenki-girl/shop.png"/>
+                <submit_text>提交请求</submit_text>
+            </button>
+            
+        </div>
+        <div style="display: flex;margin: 8px 0 0 0;">
             <div>
                 <p class="send_reply_text">日期</p>
-                <input id="input_date" name="date" type="text" style="width: 90%" />
+                <input id="input_date" name="date" type="text"/>
             </div>
             <div>
-                <p class="send_reply_text">希望天晴的地址</p>
-                <input id="input_address" name="address" type="text" />
+                <p class="send_reply_text">
+                    希望天晴的地址</p>
+                    <input id="input_address" name="address" type="text" />
             </div>
         </div>
 
@@ -88,16 +51,54 @@
 
         <div style="margin: 8px 0 0 0;">
             <p class="send_reply_text">希望天晴的理由</p>
-            <textarea name="reason" id="input_reason"rows="3"cols="20"style="width: 100%;"></textarea>
+            <textarea name="reason" id="input_reason"
+                      rows="3"
+                      cols="20"
+                      maxlength="50"></textarea>
         </div>
 
-        <div class="modal-footer">
-            <div style="text-align: center;" >
-                <button type="button" data-dismiss="modal" class="submit" onClick="addMessage()">提交请求</button>
-            </div>
-        </div>
-    </div>
+
+    </div> 
 </div>
+@* <div class="open_submit_contain"> *@
+@*     <button type="button" class="open_submit" data-toggle="modal" data-target="#messageModal">我要委托</button> *@
+@* </div> *@
+@* *@
+@* <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"> *@
+@*     <div class="box"> *@
+@*         <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 2px -16px 0px 0px;"><span aria-hidden="true">&times;</span></button> *@
+@*         <div style="font-size: 20px; color: red; padding: 15px 0 0 0;">¥0</div> *@
+@*         <div style="margin: 8px 0 0 0;"> *@
+@*             因下雨而困扰的你，100%的晴天女孩会为你带来阳光😄无论在什么地方... *@
+@*         </div> *@
+@*         <div style="display: flex; margin: 8px 0 0 0;"> *@
+@*             <div> *@
+@*                 <p class="send_reply_text">日期</p> *@
+@*                 <input id="input_date" name="date" type="text" style="width: 90%" /> *@
+@*             </div> *@
+@*             <div> *@
+@*                 <p class="send_reply_text">希望天晴的地址</p> *@
+@*                 <input id="input_address" name="address" type="text" /> *@
+@*             </div> *@
+@*         </div> *@
+@* *@
+@*         <div style="margin: 8px 0 0 0;"> *@
+@*             <p class="send_reply_text">你的名字</p> *@
+@*             <input id="input_name" name="name" type="text" style="width: 100%;" /> *@
+@*         </div> *@
+@* *@
+@*         <div style="margin: 8px 0 0 0;"> *@
+@*             <p class="send_reply_text">希望天晴的理由</p> *@
+@*             <textarea name="reason" id="input_reason"rows="3"cols="20"style="width: 100%;"></textarea> *@
+@*         </div> *@
+@* *@
+@*         <div class="modal-footer"> *@
+@*             <div style="text-align: center;" > *@
+@*                 <button type="button" data-dismiss="modal" class="submit" onClick="addMessage()">提交请求</button> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@
 
 <div class="replys_main">
         <h3>大家的委托：</h3>

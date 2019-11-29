@@ -13,7 +13,7 @@ namespace otenki_girl.Service
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlite("FileName=../otenki_girl.Service/message.db");
+            optionsBuilder.UseSqlite("Data Source=../otenki_girl.Service/message.db");
         }
     }
 

@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>otenki_girl</RootNamespace>
     <RuntimeIdentity>ubuntu.18.04-x64</RuntimeIdentity>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>

@@ -8,25 +8,18 @@
     background-size: cover;
     background-attachment: initial;
     margin: 0 auto;
-    width: 800px;
-    height: 667px;
-}
-
-#coin {
-    position: relative;
-    top: 325px;
-    left: 266px;
-    visibility: hidden;
+    width: 900px;
+    height: 690px;
 }
 
 .box {
     background-color: bisque;
     border-radius: 10px;
     position: relative;
-    top: 30%;
-    left: 40%;
+    top: 52%;
+    left: 64%;
     width: 290px;
-    height: 360px;
+    height: 345px;
     padding: 0 20px;
     box-shadow: 0px 0px 5px #555;
     
@@ -53,18 +46,40 @@
 }
 
 .submit {
+
+    width: 170px;
+    height: 33px;
     background: red;
     border: none;
-    border-radius: 20px;
-    color: white;
+    border-radius: 8px;
     padding: 8px 20px;
-    margin: 4px 0 0 0;
+    margin: 4px 0 0 35px;
+}
+
+
+.submit img {
+    width: 18px;
+    margin-top: -4px;
+    margin-left: -30px;
+    margin-right: 90px;
+}
+
+submit_text {
+    color: white;
+    margin-left: -50px;
 }
 
 .submit:active {
     background: brown;
 }
 
+#input_date {
+    width: 90%;
+}
+
+#input_reason {
+    width: 100%;
+}
 
 .replys_main {
     width: 680px;
