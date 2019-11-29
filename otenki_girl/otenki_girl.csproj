@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\static\css\ms.css" />
     <None Include="wwwroot\static\js\ms.js" />
   </ItemGroup>
