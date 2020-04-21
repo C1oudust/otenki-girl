@@ -41,7 +41,7 @@
             // 这个地方是监听动画结束事件，在动画结束后把消息从dom树中移除。
             // 如果你是在增加move-out后直接调用messageEl.remove，那么你不会看到任何动画效果
           messageEl.addEventListener('animationend', () => {
-                // Element对象内部有一个remove方法，调用之后可以将该元素从dom树种移除！
+                // Element对象内部有一个remove方法，调用之后可以将该元素从dom树移除！
                messageEl.remove();
            });
        }, duration);

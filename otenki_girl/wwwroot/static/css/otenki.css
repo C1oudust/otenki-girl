@@ -18,12 +18,13 @@
     position: relative;
     top: 52%;
     left: 64%;
-    width: 290px;
+    width: 285px;
     height: 345px;
     padding: 0 20px;
     box-shadow: 0px 0px 5px #555;
     
 }
+
 
 .send_reply_text {
     font-size: 13px;
@@ -82,38 +83,48 @@ submit_text {
 }
 
 .replys_main {
-    width: 680px;
+    width: 825px;
     margin: 20px auto 10px auto;
     background: bisque;
     border-radius: 10px;
     padding: 1px 20px 10px 20px;
 }
-
+.replys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .reply {
     width: 600px;
-    margin: 8px auto 30px auto;
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #777777;
 }
 
 .reply_name {
+    font-size: 16px;
     font-weight: bold;
     color: #333;
 }
 
 .reply_reason {
-    margin: 8px 8px 0 8px;
+    margin-top: 8px;
 }
 
 .reply_date {
     margin: 8px 0 0 0;
     font-size: 14px;
-    color: #555;
+    color: #777;
 }
 
 .page_change {
-    margin: 8px 0 0 0; 
-} 
+    display: flex;
+    margin: 8px 0 0 0;
+    justify-content: center;
+}
 
 .page_text {
+    margin: 7px 10px 0 10px;
     display: inline-block;
 }
 

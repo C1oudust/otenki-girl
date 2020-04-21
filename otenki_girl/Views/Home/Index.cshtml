@@ -11,9 +11,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>把晴天送给你-天气之子</title>
     <link rel="shortcut icon"
-          href="/static/img/otenki-girl/icon.ico"
+          href="/static/img/otenki-girl/sun.ico"
           type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="./static/css/otenki.css?version=1.7" />
+    <link rel="stylesheet" type="text/css" href="./static/css/otenki.css?version=1.5" />
     <link rel="stylesheet" type="text/css" href="./static/css/ms.css" />
     <link href="~/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
 </head>
@@ -43,7 +43,6 @@
                     <input id="input_address" name="address" type="text" />
             </div>
         </div>
-
         <div style="margin: 8px 0 0 0;">
             <p class="send_reply_text">你的名字</p>
             <input id="input_name" name="name" type="text" style="width: 100%;" />
@@ -56,77 +55,21 @@
                       cols="20"
                       maxlength="50"></textarea>
         </div>
-
-
     </div> 
 </div>
-@* <div class="open_submit_contain"> *@
-@*     <button type="button" class="open_submit" data-toggle="modal" data-target="#messageModal">我要委托</button> *@
-@* </div> *@
-@* *@
-@* <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"> *@
-@*     <div class="box"> *@
-@*         <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 2px -16px 0px 0px;"><span aria-hidden="true">&times;</span></button> *@
-@*         <div style="font-size: 20px; color: red; padding: 15px 0 0 0;">¥0</div> *@
-@*         <div style="margin: 8px 0 0 0;"> *@
-@*             因下雨而困扰的你，100%的晴天女孩会为你带来阳光😄无论在什么地方... *@
-@*         </div> *@
-@*         <div style="display: flex; margin: 8px 0 0 0;"> *@
-@*             <div> *@
-@*                 <p class="send_reply_text">日期</p> *@
-@*                 <input id="input_date" name="date" type="text" style="width: 90%" /> *@
-@*             </div> *@
-@*             <div> *@
-@*                 <p class="send_reply_text">希望天晴的地址</p> *@
-@*                 <input id="input_address" name="address" type="text" /> *@
-@*             </div> *@
-@*         </div> *@
-@* *@
-@*         <div style="margin: 8px 0 0 0;"> *@
-@*             <p class="send_reply_text">你的名字</p> *@
-@*             <input id="input_name" name="name" type="text" style="width: 100%;" /> *@
-@*         </div> *@
-@* *@
-@*         <div style="margin: 8px 0 0 0;"> *@
-@*             <p class="send_reply_text">希望天晴的理由</p> *@
-@*             <textarea name="reason" id="input_reason"rows="3"cols="20"style="width: 100%;"></textarea> *@
-@*         </div> *@
-@* *@
-@*         <div class="modal-footer"> *@
-@*             <div style="text-align: center;" > *@
-@*                 <button type="button" data-dismiss="modal" class="submit" onClick="addMessage()">提交请求</button> *@
-@*             </div> *@
-@*         </div> *@
-@*     </div> *@
-@* </div> *@
 
 <div class="replys_main">
         <h3>大家的委托：</h3>
-        <div id="replys">
-            @*             @{ *@
-            @*                 var m = ViewData["MassagesList"] as List<Massage>; *@
-            @*                 if (m != null) *@
-            @*                 { *@
-            @*                     foreach (var massage in m) *@
-            @*                     { *@
-            @*                         <div class="reply"> *@
-            @*                             <div class="reply_name">@massage.Name</div> *@
-            @*                             <div id="reply_reason" class="reply_reason">@massage.Reason</div> *@
-            @*                             <div id="reply_date" class="reply_date"> 在 @massage.Date ，希望 @massage.Address 天晴，发送于 @massage.AddTime </div> *@
-            @* *@
-            @*                         </div> *@
-            @*                     } *@
-            @*                 } *@
-            @* *@
-            @*             } *@
+        <div id="replys" class="replys">
+
         </div>
 
-        <div class="page_change" style=" display: flex;margin: 8px 0 0 0">
+        <div class="page_change" >
 
             <button class="btn btn-default page_change_btn "  onclick="prePage()">
                 上一页
             </button>
-            <div class="page_text" style="margin: 7px 10px 0px 10px;" id="reply_page">第1页 / 共？页</div>
+            <div class="page_text" id="reply_page">第1页 / 共？页</div>
             <button class="btn btn-default page_change_btn" onclick="nextPage()">
                 下一页
             </button>
@@ -134,7 +77,7 @@
     </div>
 
     <div class="footer">
-        欢迎点击<a href="https://github.com/c1oudust">这里</a>参与修改代码，添加功能
+        欢迎点击<a href="https://github.com/C1oudust/otenki-girl">这里</a>参与修改代码，添加功能
     </div>
     <script src="~/lib/jquery/jquery-3.3.1.min.js"></script>
     <script src="~/static/js/anime.min.js"></script>
